@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Giỏ Hàng</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/layout/gio hang/style.css">
 </head>
 
 <body>
@@ -24,16 +25,17 @@
                 <!-- Danh mục -->
                 <a class="navbar-brand" href="/index.htm">Trang Chủ</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle
-                            navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/layout/san pham/sanpham.htm">Sản Phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/layout/gio hang/giohang.htm">Giỏ Hàng</a>
+                            <a class="nav-link" href="/layout/gio
+                                    hang/giohang.htm">Giỏ Hàng</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/layout/login/login.htm">Tài Khoản</a>
@@ -49,44 +51,15 @@
         </nav>
     </header>
 
-    <!-- <div class="container">
-        <h2>Giỏ hàng</h2>
-        <p>Chi tiết giỏ hàng của bạn</p>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>ID sản phẩm</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Hình ảnh</th>
-                    <th>Giá tiền</th>
-                    <th>Số lượng</th>
-                    <th>Thành tiền</th>
-                    <th>Xóa khỏi giỏ hàng</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Dưa Hấu</td>
-                    <td></td>
-                    <td>10000</td>
-                    <td>2</td>
-                    <td>20000</td>
-                    <td><a href="#">Xóa</a></td>
-                </tr>
-            </tbody>
-        </table>
-        <div>Tổng hóa đơn thanh toán <strong>200000</strong></div>
-    </div> -->
-
+    <!-- them gio hang  -->
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Cà rốt</h5>
-                        <p class="card-text">10000vnđ</p>
+                        <img src="/img/carot.jpg" alt="" width="100%" height="60%">
+                        <p class="price">10000vnđ</p>
                         <a data-id="A123" onclick="addToCart(event)" href="#" class="btn btn-primary">Thêm vào giỏ</a>
                     </div>
                 </div>
@@ -96,7 +69,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Dưa chuột</h5>
-                        <p class="card-text">20000vnđ</p>
+                        <img src="/img/duachuot.jpg" alt="" width="100%" height="60%">
+                        <p class="price">20000vnđ</p>
                         <a data-id="A124" onclick="addToCart(event)" href="#" class="btn btn-primary">Thêm vào giỏ</a>
                     </div>
                 </div>
@@ -106,7 +80,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Rau cải cúc</h5>
-                        <p class="card-text">15000vnđ</p>
+                        <img src="/img/raucaicuc.png" alt="" width="100%" height="46%">
+                        <p class="price">15000vnđ</p>
                         <a data-id="A125" onclick="addToCart(event)" href="#" class="btn btn-primary">Thêm vào giỏ</a>
                     </div>
                 </div>
@@ -116,7 +91,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Hạt Dẻ</h5>
-                        <p class="card-text">9000vnđ</p>
+                        <img src="/img/hatde.jpeg" alt="" width="100%" height="60%">
+                        <p class="price">90000vnđ</p>
                         <a data-id="A126" onclick="addToCart(event)" href="#" class="btn btn-primary">Thêm vào giỏ</a>
                     </div>
                 </div>
@@ -124,15 +100,74 @@
         </div>
     </div>
 
+
     <div class="container">
+        <h2>Giỏ hàng</h2>
+        <p>Chi tiết giỏ hàng của bạn</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá tiền</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa khỏi giỏ hàng</th>
+                </tr>
+            </thead>
+
+            <!-- <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dưa Hấu</td>
+                    <td>10000</td>
+                    <td>2</td>
+                    <td>20000</td>
+                    <td><a href="#">Xóa</a></td>
+                </tr>
+            </tbody> -->
+        </table>
+
+        <!-- thanh toan -->
         <div class="row">
             <div class="col-12">
-                <h1>Danh sách giỏ hàng</h1>
-
                 <ol id="cart-list"></ol>
             </div>
         </div>
+
+        <button id="tt">Thanh toán</button>
+
     </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="/img/UET.png" alt="logo" width="50" height="50">
+            </div>
+            <p>Cung cấp thực phẩm chất lượng đến tận tay người tiêu dùng</p>
+        </div>
+        <div class="box">
+            <ul class="quickmenu">
+                <div class="item">
+                    <a href="#">Trang Chủ</a>
+                </div>
+                <div class="item">
+                    <a href="#">Sản Phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="#">Giỏ Hàng</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Liên Hệ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </footer>
     <script src="/layout/gio hang/main.js">
     </script>
 </body>
