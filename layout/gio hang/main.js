@@ -4,7 +4,7 @@ function addToCart(event) {
     const btn = event.target
     const cardBody = btn.parentNode
     const name = cardBody.querySelector('h5').innerText
-    let price = cardBody.querySelector('p').innerText
+    let price = cardBody.querySelector("p").innerText
     price = price.replace(/,/g, '')
         .replace(' vnđ', '')
     price = Number(price)
@@ -41,19 +41,25 @@ function render() {
             const total = currentProductInCart.price * currentProductInCart.total
             totalPrice += total
             html += `
+            <hr>
                 <li>
-                    <p>Id: ${currentProductInCart.id}</p>
-                    <p>Tên sp: ${currentProductInCart.name}</p>
-                    <p>Giá: ${currentProductInCart.price}</p>
-                    <p>Số lượng: ${currentProductInCart.total}</p>
-                    <button>Giảm</button>
-                    <button>Tăng</button>
-                    <button onclick="deleteProduct('${currentProductInCart.id}')">Xóa</button>
-                    <input onchange="updateTotalProduct(event, '${currentProductInCart.id}')" type="number" value="${currentProductInCart.total}"/>
-                    <p>Tổng tiền: ${total}</p>
-                    <hr>
-                </li>
-            `
+                    <p id="id">${currentProductInCart.id}</p>
+                    <p id="ten">${currentProductInCart.name}</p>
+                    <p id="gia">${currentProductInCart.price}</p>
+                    <p id="sl">${currentProductInCart.total}</p>
+                    <p id="tt">${currentProductInCart.price}</p>
+                    <p id="xoa"onclick="deleteProduct('${currentProductInCart.id}')">Xóa</p>
+                    </li>
+                    `
+                // <p>ID: ${currentProductInCart.id}</p>
+                //     <p>Tên sản phẩm: ${currentProductInCart.name}</p>
+                //     <p>Giá: ${currentProductInCart.price}</p>
+                //     <p>Số lượng: ${currentProductInCart.total}</p>
+                //     <p>Thành tiền: ${currentProductInCart.price}</p>
+                //     <p onclick="deleteProduct('${currentProductInCart.id}')">Xóa</p>
+                //     </li>
+                // <p>Tổng giá trị đơn h: ${total}</p>
+                // <input onchange="updateTotalProduct(event, '${currentProductInCart.id}')" type="number" value="${currentProductInCart.total}"/>
         }
     }
     html += `
